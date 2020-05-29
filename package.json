@@ -1,0 +1,19 @@
+{
+  "name": "datatables_columnfilter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "angular.datatables.columnFilter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/btalpiga/datatables_columnFilter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/btalpiga/datatables_columnFilter/issues"
+  },
+  "homepage": "https://github.com/btalpiga/datatables_columnFilter#readme"
+}
