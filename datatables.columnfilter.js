@@ -378,11 +378,13 @@
             var select = ""
             for (var j = 0; j < iLen; j++) {
                 if (typeof (aData[j]) != 'object') {
+                    let selected = '';
                     if (escape(aData[j]) == currentFilter || escape(aData[j]) == escape(currentFilter))
                         {selected = 'selected '}
                     r += '<option ' + selected + ' value="' + escape(aData[j]) + '">' + aData[j] + '</option>';
                 }
                 else {
+                    let selected = '';
                     if (bRegex) {
                         //Do not escape values if they are explicitely set to avoid escaping special characters in the regexp
                         if (aData[j].value == currentFilter) {selected = 'selected ';}
