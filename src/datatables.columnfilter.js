@@ -103,7 +103,7 @@
             label = label.replace(/(^\s*)|(\s*$)/g, "");
             var currentFilter = oTable.fnSettings().aoPreSearchCols[i].sSearch;
             var search_init = 'search_init ';
-            var inputvalue = label;
+            var inputvalue = '';
             if (currentFilter != '' && currentFilter != '^') {
                 if (bIsNumber && currentFilter.charAt(0) == '^')
                     inputvalue = currentFilter.substr(1); //ignore trailing ^
@@ -112,8 +112,7 @@
                 search_init = '';
             }
 
-            // var input = $('<input type="text" class="' + search_init + sCSSClass + '" value="' + inputvalue + '"/>'); //class='form-control'
-            var input = $('<input type="text" class="form-control search-input-dt" value="' + inputvalue + '"/>');
+            var input = $(`<input type="text" class="form-control search-input-dt" value="${inputvalue}" placeholder="${label}"/>`);
             if (iMaxLenght != undefined && iMaxLenght != -1) {
                 input.attr('maxlength', iMaxLenght);
             }
